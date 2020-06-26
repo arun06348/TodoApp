@@ -1,0 +1,9 @@
+<div class="center">
+<mat-card>
+    <h1>Todo⌛</h1>
+    <app-todo></app-todo>
+    <div *ngFor="let todo of todoService.getTodos()">
+      <app-todobody [todo]="todo"></app-todobody>
+    </div>
+</mat-card>
+</div>

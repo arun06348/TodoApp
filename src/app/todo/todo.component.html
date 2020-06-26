@@ -1,0 +1,4 @@
+<div class="form-group ">
+  <input type="text" class="form-control a" [(ngModel)]="todoText" value={{todoText}}/>
+  <button class="btn btn-outline-primary align" (click)="addTodo()" [disabled]="!todoText" >Add</button>
+</div>
